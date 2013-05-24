@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/polydev/!svn/ver/34/poly/patients/plugins/HtmlTidy
+END
+html-tidy-config.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/polydev/!svn/ver/34/poly/patients/plugins/HtmlTidy/html-tidy-config.cfg
+END
+html-tidy-logic.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/polydev/!svn/ver/34/poly/patients/plugins/HtmlTidy/html-tidy-logic.php
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/polydev/!svn/ver/34/poly/patients/plugins/HtmlTidy/README
+END
+html-tidy.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/polydev/!svn/ver/34/poly/patients/plugins/HtmlTidy/html-tidy.js
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/polydev/!svn/ver/34/poly/actes
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/polydev/!svn/ver/34/poly/actes/index.php
+END
+add_acte.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/polydev/!svn/ver/49/poly/actes/add_acte.php
+END
+ricoXMLquery.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/polydev/!svn/ver/49/poly/actes/ricoXMLquery.php
+END
+modif_acte.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/polydev/!svn/ver/49/poly/actes/modif_acte.php
+END
+applib.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/polydev/!svn/ver/49/poly/actes/applib.php
+END
+listing_acte.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/polydev/!svn/ver/49/poly/actes/listing_acte.php
+END
+recherche_acte.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/polydev/!svn/ver/49/poly/actes/recherche_acte.php
+END
+acte_action.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/polydev/!svn/ver/34/poly/actes/acte_action.php
+END

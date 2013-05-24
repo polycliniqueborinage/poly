@@ -1,0 +1,12 @@
+<modify-entry
+   last-author="targoo"
+   committed-rev="41"
+   committed-date="2008-06-28T07:24:56.362583Z"
+   name="newé.gif"/>
+<committed
+   name="newé.gif"
+   revision="41"/>
+<modify-wcprop
+   name="newé.gif"
+   propval="/svn/polydev/!svn/ver/41/poly/images/new%C3%A9.gif"
+   propname="svn:wc:ra_dav:version-url"/>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/polydev/!svn/ver/34/poly/medecins/devutils/lib
+END
+install.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/polydev/!svn/ver/34/poly/medecins/devutils/lib/install.php
+END
+svn_commit_preproc.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/polydev/!svn/ver/34/poly/medecins/devutils/lib/svn_commit_preproc.php
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/polydev/!svn/ver/34/poly/medecins/devutils/lib/.htaccess
+END

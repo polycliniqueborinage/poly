@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/polydev/!svn/ver/34/poly/configurations/conf
+END
+banner.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/polydev/!svn/ver/34/poly/configurations/conf/banner.txt
+END
+infile_list.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/polydev/!svn/ver/34/poly/configurations/conf/infile_list.txt
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/polydev/!svn/ver/34/poly/configurations/conf/.htaccess
+END
+perms_list.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/polydev/!svn/ver/34/poly/configurations/conf/perms_list.txt
+END

@@ -1,0 +1,9 @@
+[MESSAGE]
+Type=Add
+[DicomData]
+(0008,0050)=112300
+(0008,0060)=CT
+(0008,0080)=C.I.M.F.I. sprl
+(0008,0090)=Garinelli^Virginie martine
+(0010,0010)=Garinelli^Virginie martine
+(0010,0020)=74112105078

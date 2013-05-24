@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/polydev/!svn/ver/34/poly/configurations/plugins/ImageManager/Classes
+END
+ImageEditor.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/polydev/!svn/ver/34/poly/configurations/plugins/ImageManager/Classes/ImageEditor.php
+END
+Transform.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/polydev/!svn/ver/34/poly/configurations/plugins/ImageManager/Classes/Transform.php
+END
+IM.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/polydev/!svn/ver/34/poly/configurations/plugins/ImageManager/Classes/IM.php
+END
+NetPBM.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/polydev/!svn/ver/34/poly/configurations/plugins/ImageManager/Classes/NetPBM.php
+END
+Files.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/polydev/!svn/ver/34/poly/configurations/plugins/ImageManager/Classes/Files.php
+END
+GD.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/polydev/!svn/ver/34/poly/configurations/plugins/ImageManager/Classes/GD.php
+END
+Thumbnail.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/polydev/!svn/ver/34/poly/configurations/plugins/ImageManager/Classes/Thumbnail.php
+END
+ImageManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/polydev/!svn/ver/34/poly/configurations/plugins/ImageManager/Classes/ImageManager.php
+END

@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/polydev/!svn/ver/34/poly/patients
+END
+patient_detail.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/polydev/!svn/ver/40/poly/patients/patient_detail.php
+END
+modif_patient_mutuelle.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/polydev/!svn/ver/34/poly/patients/modif_patient_mutuelle.php
+END
+add_patient_titulaire.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/polydev/!svn/ver/57/poly/patients/add_patient_titulaire.php
+END
+listing_patient.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/polydev/!svn/ver/57/poly/patients/listing_patient.php
+END
+htmlarea.js
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/polydev/!svn/ver/34/poly/patients/htmlarea.js
+END
+add_patient_non_titulaire.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/polydev/!svn/ver/57/poly/patients/add_patient_non_titulaire.php
+END
+ricoXMLquery.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/polydev/!svn/ver/47/poly/patients/ricoXMLquery.php
+END
+patient_check_titulaire.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/polydev/!svn/ver/34/poly/patients/patient_check_titulaire.php
+END
+popupdiv.js
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/polydev/!svn/ver/34/poly/patients/popupdiv.js
+END
+applib.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/polydev/!svn/ver/47/poly/patients/applib.php
+END
+recherche_patient.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/polydev/!svn/ver/57/poly/patients/recherche_patient.php
+END
+eidlib.jar
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/polydev/!svn/ver/34/poly/patients/eidlib.jar
+END
+listing_patient_comment.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/polydev/!svn/ver/57/poly/patients/listing_patient_comment.php
+END
+dialog.js
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/polydev/!svn/ver/34/poly/patients/dialog.js
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/polydev/!svn/ver/34/poly/patients/index.php
+END
+htmlarea.css
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/polydev/!svn/ver/34/poly/patients/htmlarea.css
+END
+modif_patient.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/polydev/!svn/ver/57/poly/patients/modif_patient.php
+END
+popupwin.js
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/polydev/!svn/ver/34/poly/patients/popupwin.js
+END
+beidlib.jar
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/polydev/!svn/ver/34/poly/patients/beidlib.jar
+END
+inline-dialog.js
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/polydev/!svn/ver/34/poly/patients/inline-dialog.js
+END
+patient_action.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/polydev/!svn/ver/34/poly/patients/patient_action.php
+END

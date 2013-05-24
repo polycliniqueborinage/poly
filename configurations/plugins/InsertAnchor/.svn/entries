@@ -1,0 +1,60 @@
+8
+
+dir
+34
+http://polycliniqueborinage.dyndns.org/svn/polydev/poly/configurations/plugins/InsertAnchor
+http://polycliniqueborinage.dyndns.org/svn/polydev
+
+
+
+2008-06-23T19:43:43.911598Z
+34
+targoo
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+282f8ec6-6b70-4122-b4cc-51e5379b8f2c
+
+img
+dir
+
+insert-anchor.css
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+3c308b408264b59e51b82d19529ad0f9
+2008-06-23T19:43:43.911598Z
+34
+targoo
+has-props
+
+insert-anchor.js
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+a84e8a12c97302ecf382bb8a02db71b4
+2008-06-23T19:43:43.911598Z
+34
+targoo
+has-props
+
+lang
+dir
+

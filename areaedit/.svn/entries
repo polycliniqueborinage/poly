@@ -1,0 +1,179 @@
+8
+
+dir
+34
+http://polycliniqueborinage.dyndns.org/svn/polydev/poly/areaedit
+http://polycliniqueborinage.dyndns.org/svn/polydev
+
+
+
+2008-06-23T19:43:43.911598Z
+34
+targoo
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+282f8ec6-6b70-4122-b4cc-51e5379b8f2c
+
+.areaedit_root
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2008-06-23T19:43:43.911598Z
+34
+targoo
+has-props
+
+Configure.php
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+7b6d97b89e50388d010a86839585ed4c
+2008-06-23T19:43:43.911598Z
+34
+targoo
+has-props
+
+VERSION.php
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+c8ae4fe31dcad831b784aafb4d4442fb
+2008-06-23T19:43:43.911598Z
+34
+targoo
+has-props
+
+conf
+dir
+
+ddt
+dir
+
+devutils
+dir
+
+dialog.js
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+a866d3721abaa6bd6516a02b0fc77700
+2008-06-23T19:43:43.911598Z
+34
+targoo
+has-props
+
+htmlarea-min.js
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+fcce1899d378b0e508d02f2e2a926541
+2008-06-23T19:43:43.911598Z
+34
+targoo
+has-props
+
+htmlarea.css
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+f14543d816ed5e2504ef03538785c2a9
+2008-06-23T19:43:43.911598Z
+34
+targoo
+has-props
+
+htmlarea.js
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+3f2e6f2cedceca60827c3e8260facd5c
+2008-06-23T19:43:43.911598Z
+34
+targoo
+has-props
+
+images
+dir
+
+inline-dialog.js
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+a8f3793b45454a3fdf4bbb2a9c55c1a9
+2008-06-23T19:43:43.911598Z
+34
+targoo
+has-props
+
+lang
+dir
+
+plugins
+dir
+
+popupdiv.js
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+574620f59b9d19b7617864a8e29e8241
+2008-06-23T19:43:43.911598Z
+34
+targoo
+has-props
+
+popups
+dir
+
+popupwin.js
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+3147f4fbf05f7b29b11888dde216839b
+2008-06-23T19:43:43.911598Z
+34
+targoo
+has-props
+

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/polydev/!svn/ver/34/poly/configurations/devutils
+END
+ddtpreproc.php.in
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/polydev/!svn/ver/34/poly/configurations/devutils/ddtpreproc.php.in
+END
+svn_commit.pl.in
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/polydev/!svn/ver/34/poly/configurations/devutils/svn_commit.pl.in
+END
+buildruntime.php.in
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/polydev/!svn/ver/34/poly/configurations/devutils/buildruntime.php.in
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/polydev/!svn/ver/34/poly/configurations/devutils/.htaccess
+END
+makedocs.pl.in
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/polydev/!svn/ver/34/poly/configurations/devutils/makedocs.pl.in
+END

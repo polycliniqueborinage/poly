@@ -1,0 +1,123 @@
+<?php
+
+	// Demarre une session
+	session_start();
+
+	require_once "../../artichow/Pie.class.php";
+	include_once '../../lib/fonctions.php';
+	
+	date_default_timezone_set('UTC');
+	
+	$dicoStatistique = array('COUNT(ta.id)' => 'Pourcentage de tarifications', 'COUNT(td.id)' => 'Pourcentage de prestations','SUM(td.cout_mutuelle)' => 'Pourcentage sur le gain','SUM(td.cout_medecin)' => 'Pourcentage sur le gain du medecin','SUM(td.cout_poly)' => 'Pourcentage sur le gain de la polyclinique' );
+	$dicoGroupe = array('groupe1' => 'par medecin', 'groupe2' => 'par patient','groupe3' => 'par specialite', 'groupe4' => 'par mutuelle' );
+	
+	// groupe
+	$groupe = isset($_SESSION['stat_groupe']) ? $_SESSION['stat_groupe'] : "groupe1";
+	$groupe = isset($_GET['stat_groupe']) ? $_GET['stat_groupe'] : $groupe;
+
+	switch($groupe) {
+			
+		case "groupe1" :
+			$groupe1 = "concat(me.nom, ' ', me.prenom)";
+			$groupe2 = "me.inami";
+		break;
+		case "groupe2" :
+			$groupe1 = "concat(pa.nom, ' ', pa.prenom)";
+			$groupe2 = "pa.id";
+		break;
+		case "groupe3" :
+			$groupe1 = "sp.specialite";
+			$groupe2 = "sp.id";
+		break;
+	}
+	
+	// statistique
+	$statistique = isset($_SESSION['stat_statistique']) ? $_SESSION['stat_statistique'] : "COUNT(ta.id)";
+	$statistique = isset($_GET['stat_statistique']) ? $_GET['stat_statistique'] : $statistique;
+	
+	// nombre de resultat
+	$statistique_number = isset($_SESSION['stat_statistique_number']) ? $_SESSION['stat_statistique_number'] : 10;
+	$statistique_number = isset($_GET['stat_statistique_number']) ? $_GET['stat_statistique_number'] : $statistique_number;
+	
+	$jour = date("d");
+	$mois = date("m");
+	$annee = date("Y");
+	$dataCurrent = date("Y-m-d", mktime(0, 0, 0, $mois - 1, $jour, $annee));
+	
+	$dateMin = isset($_SESSION['stat_date_min']) ? $_SESSION['stat_date_min'] : $dataCurrent;
+	$dateMin = isset($_GET['stat_date_min']) ? $_GET['stat_date_min'] : $dateMin;
+	
+	// date de fin
+	$dateMax = isset($_SESSION['stat_date_max']) ? $_SESSION['stat_date_max'] : date("Y-m-d");
+	$dateMax = isset($_GET['stat_date_max']) ? $_GET['stat_date_max'] : $dateMax;
+	
+	// mise en session
+	$_SESSION['stat_statistique'] = $statistique;
+	$_SESSION['stat_statistique_number'] = $statistique_number;
+	$_SESSION['stat_groupe'] = $groupe;
+	$_SESSION['stat_date_min'] = $dateMin;
+	$_SESSION['stat_date_max'] = $dateMax;
+	
+	$sqlglobal= "SELECT $groupe1 AS label, $statistique AS total
+	FROM tarifications ta, tarifications_detail td, medecins me, patients pa, specialites sp
+	WHERE ta.etat =  'close'
+	AND ta.medecin_inami = me.inami
+	AND ta.patient_id = pa.id
+	AND td.tarification_id = ta.id
+	AND sp.id = me.specialite
+	AND ta.cloture >= '$dateMin' and ta.cloture <= '$dateMax' 
+	GROUP BY $groupe2
+	order by total desc
+	LIMIT $statistique_number";
+	
+	$datetools1 = new dateTools($dateMin,$dateMin);
+	$datetools2 = new dateTools($dateMax,$dateMax);
+	
+	connexion_DB('poly');
+	
+	$result = requete_SQL ($sqlglobal);
+	$nbr = mysql_num_rows($result);
+	
+	$values = array();
+	$labels = array();
+	$i = 0;
+	
+	while($data = mysql_fetch_assoc($result)) 	{
+		$values[$i] = $data['total'];
+		$labels[$i] = $data['label'];
+		$i++;
+	}
+
+	deconnexion_DB();
+	
+	$graph = new Graph(800, 400);
+	$graph->setAntiAliasing(TRUE);
+	
+	$graph->title->set($dicoStatistique[$statistique]." ".$dicoGroupe[$groupe]." ( ".$datetools1->transformDATE2()." au ".$datetools2->transformDATE2().")");
+
+	$plot = new Pie($values, PIE_EARTH);
+	$plot->setCenter(0.4, 0.55);
+	$plot->setSize(0.7, 0.6);
+	$plot->set3D(20);
+	//$plot->explode(array(1 => 20, 4 => 26, 0 => 25));
+
+	$plot->setLegend($labels);
+
+	$plot->legend->setPosition(1.35);
+
+	$graph->add($plot);
+	$graph->draw();
+	
+	//$plot->label->setPadding(2, 2, 2, 2);
+	//$plot->label->border->setColor(new Red(60));
+	//$plot->label->setFont(new Tuffy(7));
+	//$plot->label->setBackgroundGradient(
+	//	new LinearGradient(
+	//	new Red(80),
+	//	new White(80),
+	//	0
+	//	)
+	//);
+	//$plot->setLabelPrecision(1);
+
+?>

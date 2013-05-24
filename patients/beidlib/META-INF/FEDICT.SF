@@ -1,0 +1,58 @@
+Signature-Version: 1.0
+Created-By: 1.4.2_04 (Sun Microsystems Inc.)
+SHA1-Digest-Manifest: 6Kwo7IJMsoiFa2LUMbY0uhzU5S0=
+
+Name: be/belgium/eid/BEID_VersionInfo.class
+SHA1-Digest: LCo1VGuZiMDHm4p2fVTpgTkzovw=
+
+Name: be/belgium/eid/BEID_Status.class
+SHA1-Digest: +dulRhvHhwQtxpcyN/cgJo7NgDQ=
+
+Name: be/belgium/eid/LabelsBundle_en.class
+SHA1-Digest: 7mCL6v88FD7UsYexYU4+dr7iouw=
+
+Name: be/belgium/eid/BEID_Certif.class
+SHA1-Digest: pcng4d+SGo+m6yqNxVvriNEWVis=
+
+Name: be/belgium/eid/BEID_Raw.class
+SHA1-Digest: x1ayIRr7P162d6XLCv5ePFsCmZk=
+
+Name: be/belgium/eid/BEID_Bytes.class
+SHA1-Digest: MFsgv+OcXWP3qXuY6TIvaSsmpGI=
+
+Name: be/belgium/eid/LabelsBundle_fr.class
+SHA1-Digest: fDJ9DCdnpmiH+JukA6hiygdbNMw=
+
+Name: be/belgium/eid/BEID_Long.class
+SHA1-Digest: BrIulrGFWitF7Wihqfk5k8BCCmM=
+
+Name: be/belgium/eid/BEID_Pin.class
+SHA1-Digest: 7xNIfdXhm/4ZlG6i1LkCY/2rqxI=
+
+Name: be/belgium/eid/eidlib.class
+SHA1-Digest: xcGDTsgW1941IR4RVK5XeIYG+Zg=
+
+Name: be/belgium/eid/eidlibJNI.class
+SHA1-Digest: zxc7gYwzbrN2cVD8rIsoVHMVhYU=
+
+Name: be/belgium/eid/BEID_Applet.class
+SHA1-Digest: LjO+t5U44vKvWYQVoV6EhhYOELI=
+
+Name: be/belgium/eid/BEID_Address.class
+SHA1-Digest: Rjy1iAKYUWgcLOeYu69l0q/puWM=
+
+Name: be/belgium/eid/BEID_Certif_Check.class
+SHA1-Digest: RLqskSC+/MlDV2S2VcAbgJZExtw=
+
+Name: be/belgium/eid/BEID_Applet_jButtonRead_actionAdapter.class
+SHA1-Digest: 68UElV5TixFJyg1nE4q/MLNEUms=
+
+Name: be/belgium/eid/LabelsBundle_de.class
+SHA1-Digest: dl5mSamWU6Y7cC5jDZihyLON1HM=
+
+Name: be/belgium/eid/BEID_ID_Data.class
+SHA1-Digest: J8PzUe3u+VpccbLD+0amS7T7K6w=
+
+Name: be/belgium/eid/LabelsBundle_nl.class
+SHA1-Digest: d47jLXeb/C28TlwDyVNITuImfvk=
+

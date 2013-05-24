@@ -1,0 +1,217 @@
+8
+
+dir
+34
+http://polycliniqueborinage.dyndns.org/svn/polydev/poly/artichow
+http://polycliniqueborinage.dyndns.org/svn/polydev
+
+
+
+2008-06-23T19:43:43.911598Z
+34
+targoo
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+282f8ec6-6b70-4122-b4cc-51e5379b8f2c
+
+.cache
+dir
+
+.project
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+a30fbd1493a8f804c047cbbc83d506cc
+2008-06-23T19:43:43.911598Z
+34
+targoo
+
+.settings
+dir
+
+AntiSpam.class.php
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+8cd0c7f4a1a6f98a491c926ba3acadbc
+2008-06-23T19:43:43.911598Z
+34
+targoo
+
+Artichow.cfg.php
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+5697599661fec8e6043f76d3f7df14b3
+2008-06-23T19:43:43.911598Z
+34
+targoo
+
+BarPlot.class.php
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+eade9650660640f81990a9ee05022d4a
+2008-06-23T19:43:43.911598Z
+34
+targoo
+
+ChangeLog
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+67ebcc284c96156e0ead8d208b4d005b
+2008-06-23T19:43:43.911598Z
+34
+targoo
+
+Graph.class.php
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+3aa69cc1d5d186d13a10a34a7d2a76a6
+2008-06-23T19:43:43.911598Z
+34
+targoo
+
+Image.class.php
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+b08c07d70f84cbd5eb6f42529f69371f
+2008-06-23T19:43:43.911598Z
+34
+targoo
+
+LinePlot.class.php
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+c756ed9173a217ffd3266015470310f0
+2008-06-23T19:43:43.911598Z
+34
+targoo
+
+MathPlot.class.php
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+d3a121bc4e5e7798080fd960a24c7e38
+2008-06-23T19:43:43.911598Z
+34
+targoo
+
+Pattern.class.php
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+c1f85b064886e415c9e60b58caff4928
+2008-06-23T19:43:43.911598Z
+34
+targoo
+
+Pie.class.php
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+221c02a69d120391cd6093520883f32c
+2008-06-23T19:43:43.911598Z
+34
+targoo
+
+README
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+202af26625ffee82fca7cd0e0a9c7681
+2008-06-23T19:43:43.911598Z
+34
+targoo
+
+ScatterPlot.class.php
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+68aa5bd5f92a6a114b257e5f7c7d96e3
+2008-06-23T19:43:43.911598Z
+34
+targoo
+
+cache
+dir
+
+doc
+dir
+
+examples
+dir
+
+font
+dir
+
+images
+dir
+
+patterns
+dir
+
+php4
+dir
+
+php5
+dir
+
+test
+dir
+

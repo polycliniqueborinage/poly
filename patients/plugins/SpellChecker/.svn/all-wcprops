@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/polydev/!svn/ver/34/poly/patients/plugins/SpellChecker
+END
+readme-tech.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/polydev/!svn/ver/34/poly/patients/plugins/SpellChecker/readme-tech.html
+END
+spell-check-ui.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/polydev/!svn/ver/34/poly/patients/plugins/SpellChecker/spell-check-ui.js
+END
+aspell_setup.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/polydev/!svn/ver/34/poly/patients/plugins/SpellChecker/aspell_setup.php
+END
+spell-check-savedicts.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/polydev/!svn/ver/34/poly/patients/plugins/SpellChecker/spell-check-savedicts.php
+END
+spell-check-logic.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/polydev/!svn/ver/34/poly/patients/plugins/SpellChecker/spell-check-logic.php
+END
+spell-checker.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/polydev/!svn/ver/34/poly/patients/plugins/SpellChecker/spell-checker.js
+END
+spell-check-ui.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/polydev/!svn/ver/34/poly/patients/plugins/SpellChecker/spell-check-ui.html
+END
+spell-check-style.css
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/polydev/!svn/ver/34/poly/patients/plugins/SpellChecker/spell-check-style.css
+END

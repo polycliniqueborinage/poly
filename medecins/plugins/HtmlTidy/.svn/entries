@@ -1,0 +1,86 @@
+8
+
+dir
+40
+http://polycliniqueborinage.dyndns.org/svn/polydev/poly/medecins/plugins/HtmlTidy
+http://polycliniqueborinage.dyndns.org/svn/polydev
+
+
+
+2008-06-23T19:43:43.911598Z
+34
+targoo
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+282f8ec6-6b70-4122-b4cc-51e5379b8f2c
+
+README
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+0f6c184c02cd4f27a4205731733538ac
+2008-06-23T19:43:43.911598Z
+34
+targoo
+has-props
+
+html-tidy-config.cfg
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+6091786d76fff086a5852b96717e96f8
+2008-06-23T19:43:43.911598Z
+34
+targoo
+has-props
+
+html-tidy-logic.php
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+21cc399849c67226eb1761266f88de97
+2008-06-23T19:43:43.911598Z
+34
+targoo
+has-props
+
+html-tidy.js
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+f47f782fd597d579a76500e41299184e
+2008-06-23T19:43:43.911598Z
+34
+targoo
+has-props
+
+img
+dir
+
+lang
+dir
+

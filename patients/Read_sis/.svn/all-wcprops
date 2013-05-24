@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/polydev/!svn/ver/34/poly/patients/Read_sis
+END
+read_sis.layout
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/polydev/!svn/ver/34/poly/patients/Read_sis/read_sis.layout
+END
+read_sis.dev
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/polydev/!svn/ver/34/poly/patients/Read_sis/read_sis.dev
+END
+winscard.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/polydev/!svn/ver/34/poly/patients/Read_sis/winscard.h
+END
+Lire_sis.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/polydev/!svn/ver/34/poly/patients/Read_sis/Lire_sis.cpp
+END
+read_sis.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/polydev/!svn/ver/34/poly/patients/Read_sis/read_sis.cpp
+END
+Makefile.win
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/polydev/!svn/ver/34/poly/patients/Read_sis/Makefile.win
+END
+read_sis.exe
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/polydev/!svn/ver/34/poly/patients/Read_sis/read_sis.exe
+END
+SisPublic.dll
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/polydev/!svn/ver/34/poly/patients/Read_sis/SisPublic.dll
+END

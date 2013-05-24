@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/polydev/!svn/ver/34/poly/patients/plugins/ImageManager
+END
+editor.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/polydev/!svn/ver/34/poly/patients/plugins/ImageManager/editor.php
+END
+backend.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/polydev/!svn/ver/34/poly/patients/plugins/ImageManager/backend.php
+END
+config.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/polydev/!svn/ver/34/poly/patients/plugins/ImageManager/config.inc.php
+END
+thumbs.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/polydev/!svn/ver/34/poly/patients/plugins/ImageManager/thumbs.php
+END
+manager.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/polydev/!svn/ver/34/poly/patients/plugins/ImageManager/manager.php
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/polydev/!svn/ver/34/poly/patients/plugins/ImageManager/README.txt
+END
+images.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/polydev/!svn/ver/34/poly/patients/plugins/ImageManager/images.php
+END
+editorFrame.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/polydev/!svn/ver/34/poly/patients/plugins/ImageManager/editorFrame.php
+END
+newFolder.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/polydev/!svn/ver/34/poly/patients/plugins/ImageManager/newFolder.php
+END
+image-manager.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/polydev/!svn/ver/34/poly/patients/plugins/ImageManager/image-manager.js
+END

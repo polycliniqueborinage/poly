@@ -1,0 +1,50 @@
+8
+
+dir
+34
+http://polycliniqueborinage.dyndns.org/svn/polydev/poly/configurations/plugins/CharacterMap
+http://polycliniqueborinage.dyndns.org/svn/polydev
+
+
+
+2008-06-23T19:43:43.911598Z
+34
+targoo
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+282f8ec6-6b70-4122-b4cc-51e5379b8f2c
+
+character-map.js
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+4cacc715d9d2167e1ffea5ce46647fa5
+2008-06-23T19:43:43.911598Z
+34
+targoo
+has-props
+
+img
+dir
+
+lang
+dir
+
+popups
+dir
+

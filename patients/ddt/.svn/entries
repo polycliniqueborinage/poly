@@ -1,0 +1,54 @@
+8
+
+dir
+34
+http://polycliniqueborinage.dyndns.org/svn/polydev/poly/patients/ddt
+http://polycliniqueborinage.dyndns.org/svn/polydev
+
+
+
+2008-06-23T19:43:43.911598Z
+34
+targoo
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+282f8ec6-6b70-4122-b4cc-51e5379b8f2c
+
+ddt.js
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+646db825ae64d5904fb13f0967ab6601
+2008-06-23T19:43:43.911598Z
+34
+targoo
+has-props
+
+ddt.php
+file
+
+
+
+
+2008-06-23T19:43:43.000000Z
+9c4a8bc7a95a802d449c1ba5c4c01bc8
+2008-06-23T19:43:43.911598Z
+34
+targoo
+has-props
+
