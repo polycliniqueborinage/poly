@@ -1,144 +1,0 @@
-8
-
-dir
-34
-http://polycliniqueborinage.dyndns.org/svn/polydev/poly
-http://polycliniqueborinage.dyndns.org/svn/polydev
-
-
-
-2008-06-23T19:43:43.911598Z
-34
-targoo
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-282f8ec6-6b70-4122-b4cc-51e5379b8f2c
-
-.cache
-dir
-
-.project
-file
-
-
-
-
-2008-06-23T19:43:43.000000Z
-aa5f752176d35e6b29bcd4df80e89736
-2008-06-23T19:43:43.911598Z
-34
-targoo
-has-props
-
-.settings
-dir
-
-actes
-dir
-
-agendas
-dir
-
-anomalies
-dir
-
-areaedit
-dir
-
-artichow
-dir
-
-caisses
-dir
-
-cecodis
-dir
-
-configurations
-dir
-
-erreurs
-dir
-
-etiquettes
-dir
-
-factures
-dir
-
-images
-dir
-
-index.php
-file
-
-
-
-
-2008-06-23T19:43:43.000000Z
-9923233d50a32ea662ff5ff7b76cd5ae
-2008-06-23T19:43:43.911598Z
-34
-targoo
-has-props
-
-js
-dir
-
-lib
-dir
-
-listings
-dir
-
-medecins
-dir
-
-menu
-dir
-
-modal
-dir
-
-mutuelles
-dir
-
-patients
-dir
-
-plugins
-dir
-
-protheses
-dir
-
-rico
-dir
-
-scriptaculous
-dir
-
-statistiques
-dir
-
-style
-dir
-
-tarifications
-dir
-
-yui
-dir
-
