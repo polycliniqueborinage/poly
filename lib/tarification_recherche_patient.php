@@ -68,7 +68,8 @@
 		p.tiers_payant_info as patient_tiers_payant_info, 
 		p.vipo_info as patient_vipo_info, 
 		p.mutuelle_info as patient_mutuelle_info, 
-		p.interdit_info as patient_interdit_info, 
+		p.interdit_info as patient_interdit_info,
+		p.amende as patient_amende, 
 		(p.rating_rendez_vous_info + p.rating_frequentation_info + p.rating_preference_info) as patient_rating_somme_info,
 		p.rating_rendez_vous_info as patient_rating_rendez_vous_info, 
 		p.rating_frequentation_info  as patient_rating_frequentation_info, 
@@ -210,6 +211,7 @@
 			if($data['patient_vipo_info'] == 'checked') { $content .=  "<li><strong><b style='color:red'>Refus r&eacute;duction VIPO</b></strong></li>"; }
 			if($data['patient_mutuelle_info'] == 'checked') { $content .=  "<li><strong><b style='color:red'>Refus prise en charge aux mutuelles</b></strong></li>"; }
 			if($data['patient_interdit_info'] == 'checked') { $content .=  "<li><strong><b style='color:red'>INTERDIT D'ETABLISSEMENT</b></strong></li>"; }
+			if($data['patient_amende'] == 'checked') { $content .=  "<li><strong><b style='color:red'>Le patient a une AMENDE !</b></strong></li>"; }
 			
 			$content .=  "<br/>";
 			
