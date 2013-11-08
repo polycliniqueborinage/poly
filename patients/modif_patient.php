@@ -56,6 +56,7 @@
 	$formMail = '';
 	$formFumeur = '';
 	$formSurpoids = '';
+	$formAmende = '';
 	$formCT1 = '';
 	$formCT1 = '';
 	$formCT1CT2 = '';
@@ -143,6 +144,8 @@
 		$formFumeur   = $test->convert($formFumeur);
 		$formSurpoids = isset($_POST['surpoids']) ? $_POST['surpoids'] : '';
 		$formSurpoids = $test->convert($formSurpoids);
+		$formAmende = isset($_POST['amende']) ? $_POST['amende'] : '';
+		$formAmende = $test->convert($formAmende);
 		
 		$formMutuelleCode = isset($_POST['mutuelle_code']) ? $_POST['mutuelle_code'] : '';
 		$formMutuelleCode = $test->convert($formMutuelleCode);
@@ -231,7 +234,7 @@
 			$q = requete_SQL ($sql);
 			
 			// UPDATE
-			$q = requete_SQL ("UPDATE `patients` SET nom='$formNom', prenom='$formPrenom', date_naissance='$formDateNaissanceAnnee-$formDateNaissanceMois-$formDateNaissanceJour', sexe='$formSexe', rue= '$formRue', code_postal= '$formCodePostal', commune= '$formCommune', niss='$formNISS', titulaire_id='$formTitulaireID' , mutuelle_code='$formMutuelleCode' , mutuelle_matricule='$formMutuelleMatricule' , sis='$formSIS' , telephone='$formTelephone' , gsm='$formGSM' , mail='$formMail' , nationnalite='$formNationnalite' , prescripteur='$formPrescripteur' , ct1='$formCT1' , ct2='$formCT2', tiers_payant='$formTiersPayant', tiers_payant_info='$formTiersPayantInfo', vipo_info='$formVipoInfo' , mutuelle_info='$formMutuelleInfo', interdit_info='$formInterditInfo', rating_rendez_vous_info='$formRatingRendezVousInfo' , rating_frequentation_info='$formRatingFrequentationInfo', rating_preference_info='$formRatingPreferenceInfo', commentaire='$formCommentaire', textcomment='$formTextComment', `exported` = 0, fumeur = '$formFumeur', obese = '$formSurpoids' where id='$formID'");
+			$q = requete_SQL ("UPDATE `patients` SET nom='$formNom', prenom='$formPrenom', date_naissance='$formDateNaissanceAnnee-$formDateNaissanceMois-$formDateNaissanceJour', sexe='$formSexe', rue= '$formRue', code_postal= '$formCodePostal', commune= '$formCommune', niss='$formNISS', titulaire_id='$formTitulaireID' , mutuelle_code='$formMutuelleCode' , mutuelle_matricule='$formMutuelleMatricule' , sis='$formSIS' , telephone='$formTelephone' , gsm='$formGSM' , mail='$formMail' , nationnalite='$formNationnalite' , prescripteur='$formPrescripteur' , ct1='$formCT1' , ct2='$formCT2', tiers_payant='$formTiersPayant', tiers_payant_info='$formTiersPayantInfo', vipo_info='$formVipoInfo' , mutuelle_info='$formMutuelleInfo', interdit_info='$formInterditInfo', rating_rendez_vous_info='$formRatingRendezVousInfo' , rating_frequentation_info='$formRatingFrequentationInfo', rating_preference_info='$formRatingPreferenceInfo', commentaire='$formCommentaire', textcomment='$formTextComment', `exported` = 0, fumeur = '$formFumeur', obese = '$formSurpoids', amende = '$formAmende' where id='$formID'");
 			
 			// Valider l'ajout dans la DB
 			$_SESSION['information']="<div id='dbinfo'>Op&eacute;ration r&eacute;ussie - ".html_entity_decode(htmlentities(stripcslashes($formNom),ENT_QUOTES))." ".html_entity_decode(htmlentities(stripcslashes($formPrenom),ENT_QUOTES))." a &eacute;t&eacute; correctement modifi&eacute; dans la base de donn&eacute;e</div>";
@@ -310,7 +313,8 @@
 			p.gsm as patient_gsm, 
 			p.mail as patient_mail,
 			p.fumeur as patient_fumeur,
-			p.obese as patient_surpoids, 
+			p.obese as patient_surpoids,
+			p.amende as patient_amende, 
 			p.mutuelle_code as patient_mutuelle_code, 
 			p.mutuelle_matricule as patient_mutuelle_matricule, 
 			p.sis as patient_sis, 
@@ -367,6 +371,7 @@
 				$formMail = $data['patient_mail'];
 				$formFumeur = $data['patient_fumeur'];
 				$formSurpoids = $data['patient_surpoids'];
+				$formAmende = $data['patient_amende'];
 				$formMutuelleMatricule = $data['patient_mutuelle_matricule'];
 				$formMutuelleCode = $data['patient_mutuelle_code'];
 				if ($formMutuelleCode == 0) $formMutuelleCode='';
@@ -799,6 +804,13 @@
 								<tr>
 									<th class=''>Le patient est-il en surpoids?</th>
 									<td class='formInput'><input type='checkbox' name='surpoids' id='surpoids' class='txtField' title='Surpoids'  value='checked' <?=$formSurpoids?> />
+									</td>
+								</tr>
+								
+								<!-- Amende -->
+								<tr>
+									<th class=''>Le patient a-t-il une amende?</th>
+									<td class='formInput'><input type='checkbox' name='amende' id='amende' class='txtField' title='Amende'  value='checked' <?=$formAmende?> />
 									</td>
 								</tr>
 								

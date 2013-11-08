@@ -53,7 +53,10 @@
 		mutuelle_matricule as patient_mutuelle_matricule, 
 		sis as patient_sis, 
 		ct1 as patient_ct1, 
-		ct2 as patient_ct2, 
+		ct2 as patient_ct2,
+		fumeur as patient_fumeur,
+		obese as patient_surpoids,
+		amende as patient_amende, 
 		tiers_payant as patient_tiers_payant, 
 		niss as patient_niss, 
 		titulaire_id as patient_titulaire_id, 
@@ -98,6 +101,34 @@
 			echo "<b style='color:green'>Rendez-vous : ".$data['patient_rating_rendez_vous_info']." / 5</b><br/>";
 			echo "<b style='color:green'>Fr&eacute;quentation : ".$data['patient_rating_frequentation_info']." / 5</b><br/>";
 			echo "<b style='color:green'>Pr&eacute;f&eacute;rence : ".$data['patient_rating_preference_info']." / 5</b><br/><br/>";
+			
+			
+			if($data['patient_fumeur'] == "checked"){
+				$fumeur = "Oui";
+			}
+			else{
+				$fumeur = "Non";
+			}
+				
+			if($data['patient_surpoids'] == "checked"){
+				$surpoids = "Oui";
+			}
+			else{
+				$surpoids = "Non";
+			}
+				
+			if($data['patient_amende'] == "checked"){
+				$amende = "Oui";
+			}
+			else{
+				$amende = "Non";
+			}
+				
+			echo "<b style='color:green'>Fumeur : ".$fumeur."</b><br>";
+			echo "<b style='color:green'>Surpoids : ".$surpoids."</b><br/>";
+			echo "<b style='color:green'>Amende : ".$amende."</b><br/>";
+			
+			
 			echo "</td><td style='border:none'>";
 			echo "<b>Code Mutuelle : </b>".$data['patient_mutuelle_code']."<br/>";
 			echo "<b>CT1/CT2 : </b>".$data['patient_ct1']."/".$data['patient_ct2']."<br/>";

@@ -105,11 +105,13 @@
 	$formMail = isset($_POST['mail']) ? $_POST['mail'] : '';
 	$formMail = $test->convert($formMail);
 	
-// NEW: Add fumeur & Surpoids
+// NEW: Add fumeur & Surpoids  & Amende
 	$formFumeur = isset($_POST['fumeur']) ? $_POST['fumeur'] : '';
 	$formFumeur = $test->convert($formFumeur);
 	$formSurpoids = isset($_POST['surpoids']) ? $_POST['surpoids'] : '';
-	$formSurpoids = $test->convert($formSurpoids);	
+	$formSurpoids = $test->convert($formSurpoids);
+	$formAmende = isset($_POST['amende']) ? $_POST['amende'] : '';
+	$formAmende = $test->convert($formAmende);	
 // END 		
 	
 	$formMutuelleCode = isset($_POST['mutuelle_code']) ? $_POST['mutuelle_code'] : '';
@@ -200,8 +202,8 @@
     		if ($n == 0) {
 				
 				// Ajout DB
-				$sql = "INSERT INTO `patients` ( `nom` , `prenom` , `date_naissance` , `sexe`, `rue`, `code_postal`, `commune`, `niss` , `mutuelle_code` , `mutuelle_matricule` , `sis` , `telephone` , `gsm` , `mail` , `nationnalite` , `prescripteur` , `ct1` , `ct2`, `tiers_payant`, `titulaire_id`, `tiers_payant_info`,  `vipo_info`, `mutuelle_info`, `interdit_info`, `rating_rendez_vous_info`, `rating_frequentation_info`, `rating_preference_info`, `commentaire`, `textcomment`, `exported`, `fumeur`, `obese`  )
-VALUES ('$formNom', '$formPrenom',  '$formDateNaissanceAnnee-$formDateNaissanceMois-$formDateNaissanceJour', '$formSexe', '$formRue', '$formCodePostal', '$formCommune',  '$formNISS', '$formMutuelleCode', '$formMutuelleMatricule', '$formSIS', '$formTelephone', '$formGSM', '$formMail', '$formNationnalite', '$formPrescripteur', '$formCT1', '$formCT2', '$formTiersPayant', '$formTitulaireID' ,'$formTiersPayantInfo', '$formVipoInfo', '$formMutuelleInfo', '$formInterditInfo', '$formRatingRendezVousInfo', '$formRatingFrequentationInfo', '$formRatingPreferenceInfo', '$formCommentaire', '$formTextComment', '0', '$formFumeur', '$formSurpoids')";
+				$sql = "INSERT INTO `patients` ( `nom` , `prenom` , `date_naissance` , `sexe`, `rue`, `code_postal`, `commune`, `niss` , `mutuelle_code` , `mutuelle_matricule` , `sis` , `telephone` , `gsm` , `mail` , `nationnalite` , `prescripteur` , `ct1` , `ct2`, `tiers_payant`, `titulaire_id`, `tiers_payant_info`,  `vipo_info`, `mutuelle_info`, `interdit_info`, `rating_rendez_vous_info`, `rating_frequentation_info`, `rating_preference_info`, `commentaire`, `textcomment`, `exported`, `fumeur`, `obese`, `amende`  )
+VALUES ('$formNom', '$formPrenom',  '$formDateNaissanceAnnee-$formDateNaissanceMois-$formDateNaissanceJour', '$formSexe', '$formRue', '$formCodePostal', '$formCommune',  '$formNISS', '$formMutuelleCode', '$formMutuelleMatricule', '$formSIS', '$formTelephone', '$formGSM', '$formMail', '$formNationnalite', '$formPrescripteur', '$formCT1', '$formCT2', '$formTiersPayant', '$formTitulaireID' ,'$formTiersPayantInfo', '$formVipoInfo', '$formMutuelleInfo', '$formInterditInfo', '$formRatingRendezVousInfo', '$formRatingFrequentationInfo', '$formRatingPreferenceInfo', '$formCommentaire', '$formTextComment', '0', '$formFumeur', '$formSurpoids', '$formAmende')";
 				
 				$q = requete_SQL ($sql);
 				
@@ -551,6 +553,13 @@ VALUES ('$formNom', '$formPrenom',  '$formDateNaissanceAnnee-$formDateNaissanceM
 								<tr>
 									<th class=''>Le patient est-il en surpoids?</th>
 									<td class='formInput'><input type='checkbox' name='surpoids' id='surpoids' class='txtField' title='Surpoids'  value='checked' <?=$formSurpoids?> />
+									</td>
+								</tr>
+								
+								<!-- Amende -->
+								<tr>
+									<th class=''>Le patient a-t-il une amende?</th>
+									<td class='formInput'><input type='checkbox' name='amende' id='amende' class='txtField' title='Amende'  value='checked' <?=$formAmende?> />
 									</td>
 								</tr>
 								
