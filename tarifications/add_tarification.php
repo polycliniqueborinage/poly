@@ -18,7 +18,7 @@
 		die();
 	}
 	
-	// Inclus le fichier contenant les fonctions personalisées
+	// Inclus le fichier contenant les fonctions personalisï¿½es
 	include_once '../lib/fonctions.php';
 	
 	// Inclus le fichier contenant la gestion des erreurs
@@ -86,7 +86,7 @@
 		$test->stringtest($formPatientID,"patient","patient");
 		$test->stringtest($formMedecinInami,"medecin","medecin");
 			
-		// Traitement lorsque tous les tests sont passés avec succès
+		// Traitement lorsque tous les tests sont passï¿½s avec succï¿½s
 		if ($test->Count == 0) {
 			
 			$log .= "<b>Le ".date('d.m.y')." &agrave; ".date('h:i:s A')." ".$sessCaisse." cr&eacute;e la tarification</b><br/><br/>";
@@ -210,7 +210,7 @@
 						<div class="navigation-hight">
 
 							<div id='formhelp'>
-								Ce formulaire permet d'encoder une nouvelle tarification pour des <b>patients valides</b>.<font color="red"><b>  Il est fondamentale que les informations d'assurabilité soient correctement encodées (CT1, CT2, code de mutuelle, matricule).</b></font><br />
+								Ce formulaire permet d'encoder une nouvelle tarification pour des <b>patients valides</b>.<font color="red"><b>  Il est fondamentale que les informations d'assurabilit&eacute; soient correctement encod&eacute;es (CT1, CT2, code de mutuelle, matricule).</b></font><br />
 							</div>
 							
 						</div>
@@ -290,6 +290,16 @@
                				<div id="tarificationOldList"></div>
 						</div>
 						
+					</div>
+					
+					<a class="taskControl" href="#">M&eacute;decine pr&eacute;ventive</a>
+			
+					<div class="sidebar labels-red">
+					
+						<h2>Imprimer les documents :</h2>
+
+						<div id="motifBox"></div>
+					
 					</div>
 					
 					<a class="taskControl" href="#">Etiquettes</a>

@@ -12,9 +12,11 @@ function tarificationRecherchePatient(pseudo) {
   				content = json.root.content;
     			patientMenu = json.root.patientMenu;
     			titulaireMenu = json.root.titulaireMenu;
+    			motifMP = json.root.motifMP;
 				$('patientBox').innerHTML = content;
 				$('patientMenu').innerHTML = patientMenu;
 				$('titulaireMenu').innerHTML = titulaireMenu;
+				$('motifBox').innerHTML = motifMP;
 		    },
 		    onFailure: function(){ $('patientBox').innerHTML = ('Erreur... contact targoo@gmail.com') }
 		});
@@ -39,9 +41,11 @@ function tarificationRecherchePatientList(id)  {
     			content = json.root.content;
     			patientMenu = json.root.patientMenu;
     			titulaireMenu = json.root.titulaireMenu;
+    			motifMP = json.root.motifMP;
 				$('patientBox').innerHTML = content;
 				$('patientMenu').innerHTML = patientMenu;
 				$('titulaireMenu').innerHTML = titulaireMenu;
+				$('motifBox').innerHTML = motifMP;
 		    },
 		    onFailure: function(){ $('patientBox').innerHTML = ('Erreur... contact targoo@gmail.com') }
 		});
@@ -131,7 +135,7 @@ function loadTarification (type,value,id,input){
 		{
 			method:'get',
 			parameters: {type: type, value: $(input).value},
-			onLoading: function () { // Requête envoyée
+			onLoading: function () { // Requï¿½te envoyï¿½e
             	$(id).innerHTML = "<img class='centerimage' src='../images/attente.gif'/>"+Ajax.activeRequestCount;
           	},
           	onSuccess: function(transport){

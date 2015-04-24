@@ -19,7 +19,7 @@
 	}
 	// SECURITE
 
-	// Inclus le fichier contenant les fonctions personalisées
+	// Inclus le fichier contenant les fonctions personalisï¿½es
 	include_once '../lib/fonctions.php';
 
 	include_once '../lib/gestionErreurs.php';
@@ -38,8 +38,9 @@
 	$content = "";
     $patientMenu = "";
     $titulaireMenu = "";
+    $motifMP = "";
     
-	// Fonction de connexion à la base de données
+	// Fonction de connexion ï¿½ la base de donnï¿½es
 	connexion_DB('poly');
 
 	$sql = "SELECT 
@@ -106,6 +107,7 @@
 		$content .= "<br/>Pas de patient correspondant !<br/>";
     	$patientMenu .= "<a class='yuimenuitemlabel' href='../patients/recherche_patient.php'>Recherche et modification du patient</a>";
     	$titulaireMenu .= "<a class='yuimenuitemlabel' href='../patients/recherche_patient.php'>Recherche et modification du titulaire</a>";
+    	$motifMP .= "<i>Aucun motif...</i>";
 		
 	} else {
 		
@@ -256,6 +258,20 @@
 			$content .=  "<hr>";
 			$content .=  "</div>";
 			
+			
+			//add control si le patient a des motifs de MP
+			$sqlMP = "SELECT * FROM mp_pile WHERE id_patient = '".$dataPatientId."' AND statut = 'a_contacter'";
+			
+			$resultMP = requete_SQL ($sqlMP);
+			
+			// RESULTAT > 0
+			if(mysql_num_rows($resultMP) > 0) {
+				$_SESSION['mpPatientID'] = $dataPatientId;
+				$motifMP .= "<a class='yuimenuitemlabel' href='../tarifications/print_mp.php' target='_NEW'>Imprimer la m&eacute;decine pr&eacute;ventive</a>";
+			} else {
+				$motifMP .= "<i>Aucun motif...</i>";
+			}
+			
 	
 		// RESULTAT  > 1
 		} else {
@@ -266,6 +282,7 @@
 
 	    	$patientMenu .= "<a class='yuimenuitemlabel' href='../patients/recherche_patient.php'>Recherche et modification du patient</a>";
     		$titulaireMenu .= "<a class='yuimenuitemlabel' href='../patients/recherche_patient.php'>Recherche et modification du titulaire</a>";
+    		$motifMP .= "<i>Aucun motif...</i>";
 			
 			$content .=  "<table border='0' cellpadding='2' cellspacing='1'>";
 			
@@ -313,7 +330,8 @@ $datas = array(
     'root' => array(
         'content' => $content, 
         'patientMenu' => $patientMenu,
-        'titulaireMenu' => $titulaireMenu
+        'titulaireMenu' => $titulaireMenu,
+    	'motifMP' => $motifMP
 )
 );
 		
