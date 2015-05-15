@@ -33,7 +33,7 @@ class prevention
     	$idPatient = (int) $idPatient;
     	$idMotif = (int) $idMotif;
     	
-    	$sql = "SELECT id_patient, id_motif, date_derniere_modification, statut FROM mp_pile WHERE `id_motif`   = '$idMotif' AND `id_patient` = '$idPatient' AND statut != 'termine'";
+    	$sql = "SELECT id_patient, id_motif, date_derniere_modification, statut FROM mp_pile WHERE `id_motif`   = '$idMotif' AND `id_patient` = '$idPatient' AND statut != 'termine' AND id_motif NOT IN ( SELECT id FROM exclude_mp )";
     	
     	$sel = mysql_query($sql);
         $contact = mysql_fetch_array($sel);
@@ -50,7 +50,7 @@ class prevention
     
     	$idPatient = (int) $idPatient;
     	 
-    	$sql = "SELECT id_patient, id_motif, date_derniere_modification, statut FROM mp_pile WHERE `id_patient` = '$idPatient' AND `statut` = 'a_contacter'";
+    	$sql = "SELECT id_patient, id_motif, date_derniere_modification, statut FROM mp_pile WHERE `id_patient` = '$idPatient' AND `statut` = 'a_contacter' AND id_motif NOT IN ( SELECT id FROM exclude_mp )";
 
     	$res = mysql_query($sql);   	
     	 

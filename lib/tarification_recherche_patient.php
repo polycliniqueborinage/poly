@@ -260,7 +260,7 @@
 			
 			
 			//add control si le patient a des motifs de MP
-			$sqlMP = "SELECT * FROM mp_pile WHERE id_patient = '".$dataPatientId."' AND statut = 'a_contacter'";
+			$sqlMP = "SELECT * FROM mp_pile WHERE id_patient = '".$dataPatientId."' AND statut = 'a_contacter' AND id_motif NOT IN ( SELECT id FROM exclude_mp )";
 			
 			$resultMP = requete_SQL ($sqlMP);
 			
