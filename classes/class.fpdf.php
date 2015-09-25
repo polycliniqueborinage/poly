@@ -2302,7 +2302,7 @@ function px2mm($px)
 
 function txtentities($html)
 {
-    $trans = get_html_translation_table(HTML_ENTITIES);
+    $trans = get_html_translation_table (HTML_ENTITIES, ENT_COMPAT | ENT_HTML401, 'ISO-8859-1');
     $trans = array_flip($trans);
     return strtr($html, $trans);
 }
