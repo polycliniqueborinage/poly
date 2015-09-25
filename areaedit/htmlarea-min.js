@@ -210,7 +210,9 @@ return newObj;};HTMLArea.checkSupportedBrowser=function()
 {if(navigator.productSub<20021201)
 {alert("You need at least Mozilla-1.3 Alpha.\n"+"Sorry, your Gecko is not supported.");return false;}
 if(navigator.productSub<20030210)
-{alert("Mozilla < 1.3 Beta is not supported!\n"+"I'll try, though, but it might not work.");}}
+{//alert("Mozilla < 1.3 Beta is not supported!\n"+"I'll try, though, but it might not work.");
+	}}
+}
 return HTMLArea.is_gecko||HTMLArea.is_ie;};HTMLArea.getElementById=function(tag,id)
 {HTMLArea._ddt("htmlarea.js","1517","getElementById(): top with tag '"+tag+"' id '"+id+"'");var el,i,objs=document.getElementsByTagName(tag);for(i=objs.length;--i>=0&&(el=objs[i]);)
 if(el.id==id)

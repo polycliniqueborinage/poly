@@ -234,7 +234,7 @@ VALUES ('$formNom', '$formPrenom',  '$formDateNaissanceAnnee-$formDateNaissanceM
 	}
 	
 	// Inclus le fichier contenant les fonctions BeID
-	include_once '../lib/BEIDCard.php';
+	//include_once '../lib/BEIDCard.php';
 	
 
 ?>
@@ -251,14 +251,14 @@ VALUES ('$formNom', '$formPrenom',  '$formDateNaissanceAnnee-$formDateNaissanceM
 		get_MENUBAR_START();
 		echo "<li class='yuimenubaritem'>Patient";
 		echo "	<div id='patientsupp' class='yuimenu'>";
-		echo "		<div class='bd'>       ";             
+		/*echo "		<div class='bd'>       ";             
 		echo "		  	<ul>";
 		echo "				<li class='yuimenuitem'>";
 		echo "					<a onclick='ReadCard();' href='#' title='Lecture de la carte d'identit&eacute;'>Lecture de la carte d'identit&eacute</a>";
 		echo "				</li>";
 		echo "			</ul>";
 		echo "		</div>";
-		echo "	</div>";
+		*/echo "	</div>";
 		echo "</li>";
 		get_MENUBAR_END($nom_fichier);
 	?>
@@ -300,7 +300,7 @@ VALUES ('$formNom', '$formPrenom',  '$formDateNaissanceAnnee-$formDateNaissanceM
 					<div class="navigation-hight">
 						
 						<div id='formhelp'>
-							Ce formulaire permet d'encoder un nouveau patient <b>non titulaire</b> de sa mutuelle.&nbsp;&nbsp;Il est donc indispensable de lui choisir un titulaire pr&eacute;encod&eacute; dans l'application.&nbsp;&nbsp;<font color="red"><b>Attention, le titulaire doit être correctement encod&eacute; avec un code mutuelle et des donn&eacute;es d'assurabilit&eacute; valides (CT1/CT2).</b></font> Il importe ensuite d'encoder le nom, pr&eacute;nom et la date de naissance. Les autres champs obligatoires peuvent être ignor&eacute;s &agrave; l'aide du checkbox en bas du formulaire.<br />
+							Ce formulaire permet d'encoder un nouveau patient <b>non titulaire</b> de sa mutuelle.&nbsp;&nbsp;Il est donc indispensable de lui choisir un titulaire pr&eacute;encod&eacute; dans l'application.&nbsp;&nbsp;<font color="red"><b>Attention, le titulaire doit &ecirc;tre correctement encod&eacute; avec un code mutuelle et des donn&eacute;es d'assurabilit&eacute; valides (CT1/CT2).</b></font> Il importe ensuite d'encoder le nom, pr&eacute;nom et la date de naissance. Les autres champs obligatoires peuvent &ecirc;tre ignor&eacute;s &agrave; l'aide du checkbox en bas du formulaire.<br />
 						</div>
 						
                         <?php echo $info_erreurs ?>
@@ -330,8 +330,8 @@ VALUES ('$formNom', '$formPrenom',  '$formDateNaissanceAnnee-$formDateNaissanceM
 							<div id = 'table_1'>
 
 							<!-- Insert -->
-							<table id='general'  border='1' cellspacing='0' cellpadding='0'>
-								<tr>
+							 <table id='general'  border='1' cellspacing='0' cellpadding='0'>
+							<!--	<tr>
                                 	<th class=''>Photo</th>
 									<td class='formInput'>
                                     	<applet
@@ -355,6 +355,7 @@ VALUES ('$formNom', '$formPrenom',  '$formDateNaissanceAnnee-$formDateNaissanceM
                                         </div>
                                 	</td>    
                                 </tr>
+                                 -->
 	
 								<!-- Titulaire -->
 								<tr>

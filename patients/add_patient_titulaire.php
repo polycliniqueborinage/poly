@@ -241,13 +241,13 @@ VALUES ('$formNom', '$formPrenom',  '$formDateNaissanceAnnee-$formDateNaissanceM
 		get_MENUBAR_START();
 		echo "<li class='yuimenubaritem'>Patient";
 		echo "	<div id='patientsupp' class='yuimenu'>";
-		echo "		<div class='bd'>       ";             
+		/*echo "		<div class='bd'>       ";             
 		echo "		  	<ul>";
 		echo "				<li class='yuimenuitem'>";
 		echo "					<a onclick='ReadCard();' href='#' title='Lecture de la carte d'identit&eacute;'>Lecture de la carte d'identit&eacute</a>";
 		echo "				</li>";
 		echo "			</ul>";
-		echo "		</div>";
+		*/echo "		</div>";
 		echo "	</div>";
 		echo "</li>";
 		get_MENUBAR_END($nom_fichier);
@@ -288,7 +288,7 @@ VALUES ('$formNom', '$formPrenom',  '$formDateNaissanceAnnee-$formDateNaissanceM
 					<div class="navigation-hight">
 
 						<div id='formhelp'>
-							Ce formulaire permet d'encoder un nouveau patient qui est titulaire de sa mutuelle.  Il importe d'encoder le nom, le pr&eacute;nom et la date de naissance. Les autres champs obligatoires peuvent être ignorés à l'aide du checkbox en bas du formulaire.<br />
+							Ce formulaire permet d'encoder un nouveau patient qui est titulaire de sa mutuelle.  Il importe d'encoder le nom, le pr&eacute;nom et la date de naissance. Les autres champs obligatoires peuvent &ecirc;tre ignor&eacute;s &agrave; l'aide du checkbox en bas du formulaire.<br />
 						</div>
 						<?php echo $info_erreurs ?>
                             
@@ -317,7 +317,7 @@ VALUES ('$formNom', '$formPrenom',  '$formDateNaissanceAnnee-$formDateNaissanceM
 							<div id = 'table_1'>
 								
 							<table border='1' cellspacing='0' cellpadding='0'>
-								
+								<!-- 
 								<tr>
                                 	<th class=''>Photo</th>
 									<td class='formInput'>
@@ -343,6 +343,7 @@ VALUES ('$formNom', '$formPrenom',  '$formDateNaissanceAnnee-$formDateNaissanceM
                                         </div>
                                   	</td>    
                              	</tr>
+                             	 -->
 									    
 								<!-- Titulaire -->
 								<tr>
