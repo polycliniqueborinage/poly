@@ -49,7 +49,8 @@
 		if(mysql_num_rows($result)!=0) {
 			while($data = mysql_fetch_assoc($result)) 	{
 				echo htmlentities($data['code_postal'])." ";
-				echo htmlentities($data['ville']);
+				//echo htmlentities($data['ville'], ENT_NOQUOTES, "UTF-8");
+				echo htmlspecialchars($data['ville'], ENT_NOQUOTES, "UTF-8");
 				// BUG : - is a possible value in the field 'localite'
 				echo "#";
 			}
